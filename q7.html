@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox Exam Challenge</title>
+    <!-- Link to Lightbox2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        img {
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lightbox Exam Challenge</h1>
+    <p>Use the <a href="https://lokeshdhakar.com/projects/lightbox2/">lightbox code from class</a> to transform the nine images below into three sets of lightboxes. The first set should be the first image from each div, the second set should be the second image from each div, and the third set should be the third image from each div.</p>
+    <h2>Requirements</h2>
+    <ol>
+        <li>The first set should be the first image from each div, the second set should be the second image from each div, and the third set should be the third image from each div.</li>
+        <li>Each lightbox image must have a caption and alt text.</li>
+        <li>Change the imageFadeDuration to 1000.</li>
+    </ol>
+
+    <!-- First Set -->
+    <div>
+        <a href="./q7_files/150px-Recherches_pour_servir_à_l'histoire_naturelle_des_mammifères_(Pl._50)_(white_background).jpg" data-lightbox="set1" data-title="Caption: First Image of First Div">
+            <img src="./q7_files/150px-Recherches_pour_servir_à_l'histoire_naturelle_des_mammifères_(Pl._50)_(white_background).jpg" width="200" alt="First Image of First Div">
+        </a>
+        <a href="./q7_files/150px-Spectacled_bear_(1829).jpg" data-lightbox="set1" data-title="Caption: First Image of Second Div">
+            <img src="./q7_files/150px-Spectacled_bear_(1829).jpg" width="200" alt="First Image of Second Div">
+        </a>
+        <a href="./q7_files/150px-Ursus_arctos_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_(white_background).jpg" data-lightbox="set1" data-title="Caption: First Image of Third Div">
+            <img src="./q7_files/150px-Ursus_arctos_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_(white_background).jpg" width="200" alt="First Image of Third Div">
+        </a>
+    </div>
+
+    <!-- Second Set -->
+    <div>
+        <a href="./q7_files/Panda_géant_-_tête_(Ailuropoda_melanoleuca)_(2).jpg" data-lightbox="set2" data-title="Caption: Second Image of First Div">
+            <img src="./q7_files/Panda_géant_-_tête_(Ailuropoda_melanoleuca)_(2).jpg" width="200" alt="Second Image of First Div">
+        </a>
+        <a href="./q7_files/Giant_Pandas_having_a_snack.jpg" data-lightbox="set2" data-title="Caption: Second Image of Second Div">
+            <img src="./q7_files/Giant_Pandas_having_a_snack.jpg" width="200" alt="Second Image of Second Div">
+        </a>
+        <a href="./q7_files/440px-Panda_Cub_from_Wolong,_Sichuan,_China.JPG" data-lightbox="set2" data-title="Caption: Second Image of Third Div">
+            <img src="./q7_files/440px-Panda_Cub_from_Wolong,_Sichuan,_China.JPG" width="200" alt="Second Image of Third Div">
+        </a>
+    </div>
+
+    <!-- Third Set -->
+    <div>
+        <a href="./q7_files/Lightmatter_panda.jpg" data-lightbox="set3" data-title="Caption: Third Image of First Div">
+            <img src="./q7_files/Lightmatter_panda.jpg" width="200" alt="Third Image of First Div">
+        </a>
+        <a href="./q7_files/Giant_Panda_Eating.jpg" data-lightbox="set3" data-title="Caption: Third Image of Second Div">
+            <img src="./q7_files/Giant_Panda_Eating.jpg" width="200" alt="Third Image of Second Div">
+        </a>
+        <a href="./q7_files/Qinling_panda.jpg" data-lightbox="set3" data-title="Caption: Third Image of Third Div">
+            <img src="./q7_files/Qinling_panda.jpg" width="200" alt="Third Image of Third Div">
+        </a>
+    </div>
+
+    <!-- Include Lightbox2 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
+    <script>
+        // Set the imageFadeDuration to 1000ms
+        lightbox.option({
+            'imageFadeDuration': 1000
+        });
+    </script>
+</body>
+</html>
